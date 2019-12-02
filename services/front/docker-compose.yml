@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+
+  caddy:
+    image: abiosoft/caddy:no-stats
+    restart: always
+    environment:
+      ACME_AGREE: 'true'
+    volumes:
+      - ./Caddyfile:/etc/Caddyfile:ro
+      - ./data:/root/.caddy
