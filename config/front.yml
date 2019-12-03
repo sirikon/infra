@@ -5,7 +5,7 @@ services:
     networks: 
       front:
         aliases: 
-          - front.internal
+          - front.local
     ports:
       - 8080:80
       - 8443:443
