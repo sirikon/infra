@@ -1,4 +1,6 @@
-0.0.0.0:80 {
+{$HOME_HOST} {
+}
+{$BIRTHDAYS_CALENDAR_HOST} {
     proxy / birthdays-calendar.local {
         transparent
     }

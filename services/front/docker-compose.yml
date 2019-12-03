@@ -6,6 +6,8 @@ services:
     restart: always
     environment:
       ACME_AGREE: 'true'
+      HOME_HOST: ${HOME_HOST}
+      BIRTHDAYS_CALENDAR_HOST: ${BIRTHDAYS_CALENDAR_HOST}
     volumes:
       - ./Caddyfile:/etc/Caddyfile:ro
       - ./data:/root/.caddy
