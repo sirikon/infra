@@ -1,6 +1,3 @@
 [submodule "services/birthdays-calendar"]
 	path = services/birthdays-calendar
 	url = https://github.com/sirikon/birthdays-calendar.git
-[submodule "services/static-sites"]
-	path = services/static-sites
-	url = https://git.remolino.town/RemolinoTown/docker-static-sites.git
