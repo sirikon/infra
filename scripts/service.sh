@@ -7,6 +7,7 @@ function print_help {
   echo "Usage: service.sh <service_name> [up, down, logs]"
   echo "  up - Starts the service"
   echo "  down - Stops the service and removes the containers"
+  echo "  build - Builds the Docker images of the service"
   echo "  logs - Displays the logs"
 }
 
@@ -16,6 +17,10 @@ function __command_up {
 
 function __command_down {
   ./scripts/compose.sh ${1} down
+}
+
+function __command_build {
+  ./scripts/compose.sh ${1} build
 }
 
 function __command_logs {
