@@ -1,4 +1,4 @@
-0.0.0.0:80/sirikon {
+http://sirikon {
     gzip
     root sirikon/dist
     git {
@@ -8,7 +8,7 @@
     }
 }
 
-0.0.0.0:80/cv.sirikon {
+http://cv.sirikon {
     gzip
     root cv.sirikon/dist
     git {
@@ -18,7 +18,7 @@
     }
 }
 
-0.0.0.0:80/astenagusia {
+http://astenagusia {
     gzip
     root astenagusia/src/web/dist
     git {
