@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+
+  app:
+    image: infra-static-sites
+    restart: always
+    build:
+        context: .
+    environment:
+      ACME_AGREE: 'true'
+    volumes:
+      - ./Caddyfile:/etc/Caddyfile:ro

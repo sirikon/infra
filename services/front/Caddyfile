@@ -5,3 +5,12 @@
         transparent
     }
 }
+{$SIRIKON_HOST} {
+    proxy / static-sites.local/sirikon
+}
+{$CV_SIRIKON_HOST} {
+    proxy / static-sites.local/cv.sirikon
+}
+{$ASTENAGUSIA_HOST} {
+    proxy / static-sites.local/astenagusia
+}

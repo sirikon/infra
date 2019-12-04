@@ -1,0 +1,29 @@
+0.0.0.0:80/sirikon {
+    gzip
+    root sirikon/dist
+    git {
+        repo github.com/sirikon/sirikon.me
+        path ..
+        then_long sh -c "npm i --production && npm run build"
+    }
+}
+
+0.0.0.0:80/cv.sirikon {
+    gzip
+    root cv.sirikon/dist
+    git {
+        repo github.com/sirikon/cv
+        path ..
+        then_long sh -c "npm i --production && npm run build"
+    }
+}
+
+0.0.0.0:80/astenagusia {
+    gzip
+    root astenagusia/src/web/dist
+    git {
+        repo github.com/sirikon/astenagusia
+        path ../../../
+        then_long sh -c "yarn --prod && yarn build"
+    }
+}
