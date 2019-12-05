@@ -24,7 +24,7 @@ function __command_build {
 }
 
 function __command_logs {
-  ./scripts/compose.sh ${1} logs
+  ./scripts/compose.sh ${1} logs -f
 }
 
 function check_command_exists {
