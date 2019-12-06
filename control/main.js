@@ -2,7 +2,10 @@ const service = require('./src/service');
 
 async function main() {
     const args = getArgs();
-    if (!args.length) { return; }
+    if (!args.length) {
+        console.log('Available commands: service');
+        return;
+    }
     switch(args[0]) {
         case 'service': await service(args.slice(1));
     }

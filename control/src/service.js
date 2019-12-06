@@ -5,7 +5,14 @@ const getConfig = require('./utils/config');
 const compose = require('./utils/compose');
 
 module.exports = async function service(args) {
-    if (!args.length) { return; }
+    if (args.length < 2) {
+        console.log('Need a service name and a command.');
+        console.log('Commands:');
+        Object.keys(commands).forEach(c => {
+            console.log('  '+c);
+        });
+        return;
+    }
     await commands[args[1]](args[0]);
 }
 
