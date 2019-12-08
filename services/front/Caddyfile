@@ -5,6 +5,11 @@
         transparent
     }
 }
+{$DAVREDIRECTOR_HOST} {
+    proxy / davredirector.local {
+        transparent
+    }
+}
 {$SIRIKON_HOST} {
     proxy / static-sites.local {
         header_upstream host sirikon
