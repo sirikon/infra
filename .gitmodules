@@ -1,6 +1,0 @@
-[submodule "services/birthdays-calendar"]
-	path = services/birthdays-calendar
-	url = https://github.com/sirikon/birthdays-calendar.git
-[submodule "services/davredirector"]
-	path = services/davredirector
-	url = https://github.com/sirikon/davredirector.git
