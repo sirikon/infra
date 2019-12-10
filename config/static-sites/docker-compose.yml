@@ -3,10 +3,10 @@ services:
 
   app:
     networks: 
-      front:
+      front_internal:
         aliases: 
           - static-sites.local
 
 networks:
-  front:
+  front_internal:
     external: true

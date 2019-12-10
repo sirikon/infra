@@ -1,3 +1,7 @@
 {
-    "workingDirectory": "/docker"
+    "workingDirectory": "/docker",
+    "repository": {
+        "url": "https://github.com/sirikon/birthdays-calendar.git",
+        "checkout": "master"
+    }
 }

@@ -3,10 +3,10 @@ services:
 
   web:
     networks: 
-      front:
+      front_internal:
         aliases: 
           - davredirector.local
 
 networks:
-  front:
+  front_internal:
     external: true

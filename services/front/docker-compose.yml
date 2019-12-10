@@ -6,12 +6,6 @@ services:
     restart: always
     environment:
       ACME_AGREE: 'true'
-      HOME_HOST: ${HOME_HOST}
-      BIRTHDAYS_CALENDAR_HOST: ${BIRTHDAYS_CALENDAR_HOST}
-      SIRIKON_HOST: ${SIRIKON_HOST}
-      CV_SIRIKON_HOST: ${CV_SIRIKON_HOST}
-      ASTENAGUSIA_HOST: ${ASTENAGUSIA_HOST}
-      DAVREDIRECTOR_HOST: ${DAVREDIRECTOR_HOST}
     volumes:
       - ./Caddyfile:/etc/Caddyfile:ro
       - ./data:/root/.caddy

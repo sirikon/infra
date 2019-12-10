@@ -2,11 +2,13 @@ version: '2'
 services:
 
   web:
+    env_file:
+      - ../../../config/birthdays-calendar/secrets.env
     networks: 
-      front:
+      front_internal:
         aliases: 
           - birthdays-calendar.local
 
 networks:
-  front:
+  front_internal:
     external: true
