@@ -1,0 +1,7 @@
+{
+    "workingDirectory": "/docker",
+    "repository": {
+        "url": "git@github.com:sirikon/osoondo.com.git",
+        "checkout": "master"
+    }
+}

@@ -5,6 +5,11 @@
         transparent
     }
 }
+{$OSOONDO_HOST} {
+    proxy / osoondo.local {
+        transparent
+    }
+}
 {$DAVREDIRECTOR_HOST} {
     proxy / davredirector.local {
         transparent
