@@ -1,0 +1,7 @@
+{
+    "workingDirectory": "/docker",
+    "repository": {
+        "url": "https://github.com/sirikon/rlcs-calendar.git",
+        "checkout": "master"
+    }
+}

@@ -5,6 +5,11 @@
         transparent
     }
 }
+{$RLCS_CALENDAR_HOST} {
+    proxy / rlcs-calendar.local {
+        transparent
+    }
+}
 {$OSOONDO_HOST} {
     proxy / osoondo.local {
         transparent
