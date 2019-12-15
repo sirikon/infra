@@ -1,36 +1,44 @@
 {$HOME_HOST} {
+    log / /etc/logs/home.access.log "{combined}"
 }
 {$BIRTHDAYS_CALENDAR_HOST} {
+    log / /etc/logs/birthdays-calendar.access.log "{combined}"
     proxy / birthdays-calendar.local {
         transparent
     }
 }
 {$RLCS_CALENDAR_HOST} {
+    log / /etc/logs/rlcs-calendar.access.log "{combined}"
     proxy / rlcs-calendar.local {
         transparent
     }
 }
 {$OSOONDO_HOST} {
+    log / /etc/logs/osoondo.access.log "{combined}"
     proxy / osoondo.local {
         transparent
     }
 }
 {$DAVREDIRECTOR_HOST} {
+    log / /etc/logs/davredirector.access.log "{combined}"
     proxy / davredirector.local {
         transparent
     }
 }
 {$SIRIKON_HOST} {
+    log / /etc/logs/sirikon.access.log "{combined}"
     proxy / static-sites.local {
         header_upstream host sirikon
     }
 }
 {$CV_SIRIKON_HOST} {
+    log / /etc/logs/cv-sirikon.access.log "{combined}"
     proxy / static-sites.local {
         header_upstream host cv.sirikon
     }
 }
 {$ASTENAGUSIA_HOST} {
+    log / /etc/logs/astenagusia.access.log "{combined}"
     proxy / static-sites.local {
         header_upstream host astenagusia
     }

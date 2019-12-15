@@ -9,3 +9,4 @@ services:
     volumes:
       - ./Caddyfile:/etc/Caddyfile:ro
       - ./data:/root/.caddy
+      - ../../data/front/logs:/etc/logs
