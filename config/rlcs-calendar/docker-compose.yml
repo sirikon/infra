@@ -2,6 +2,8 @@ version: '3.7'
 services:
 
   web:
+    volumes:
+      - ../../../data/rlcs-calendar/logs:/app/logs
     networks: 
       front_internal:
         aliases: 
