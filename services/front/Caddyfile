@@ -1,6 +1,10 @@
 {$HOME_HOST} {
     log / /etc/logs/home.access.log "{combined}"
 }
+http://0.0.0.0:14000 {
+    gzip
+    root /www
+}
 {$BIRTHDAYS_CALENDAR_HOST} {
     log / /etc/logs/birthdays-calendar.access.log "{combined}"
     proxy / birthdays-calendar.local {
